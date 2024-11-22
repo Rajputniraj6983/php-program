@@ -3,10 +3,10 @@
 A simple web application for managing car data using PHP and MySQL. The application demonstrates the use of CRUD (Create, Read, Update, Delete) operations with a clean and responsive interface built using Bootstrap.
 
 ## Features:
-- Add a new student (Create)
-- View all students in a table (Read)
-- Edit student details (Update)
-- Delete a student (Delete)
+- Add a new car (Create)
+- View all car in a table (Read)
+- Edit car details (Update)
+- Delete a car details (Delete)
 - Responsive design with Bootstrap 5
 - Secure data handling with prepared statements (SQL Injection prevention)
 
