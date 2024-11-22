@@ -45,8 +45,8 @@ A simple web application for managing car data using PHP and MySQL. The applicat
      CREATE TABLE product (
          id INT AUTO_INCREMENT PRIMARY KEY,
          name VARCHAR(255) NOT NULL,
-         age INTEGER NOT NULL,
-         phone INTEGER NOT NULL
+         descrition VARCHAR(255) NOT NULL,
+         price INTEGER NOT NULL
      );
      ```
 4. Update the database credentials in `config/config.php` if necessary:
