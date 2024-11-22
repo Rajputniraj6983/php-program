@@ -1,30 +1,56 @@
+<?php
+include_once "Config/config.php";
+
+// Create a Config object and connect to the database
+$c1 = new Config();
+
+
+// Handle form submission
+if (isset($_POST['submit'])) {
+    $bookname = $_POST['carname'];
+    $author = $_POST['model'];
+    $price = $_POST['price'];
+
+    $c1->insertDatabase($bookname, $author, $price);
+}
+
+// Fetch book details
+$result = $c1->selectDatabase();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Product</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Book Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container mt-5">
-        <h2>Add New Product</h2>
-        <form action="save_product.php" method="POST">
-            <div class="mb-3">
-                <label for="name" class="form-label">Product Name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="mb-3">
-                <label for="price" class="form-label">Price</label>
-                <input type="number" class="form-control" id="price" name="price" step="0.01" required>
-            </div>
-            <div class="mb-3">
-                <label for="description" class="form-label">Description</label>
-                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Add Product</button>
-        </form>
-        <a href="product.php" class="btn btn-secondary mt-3">View All Products</a>
-    </div>
+    <center>
+        <h1>Car Details</h1>
+        <br>
+        <div class="col-4">
+            <form method="POST" action="">
+                <input class="form-control" name="carname" placeholder="Car Name" required>
+                <br>
+                <input class="form-control" name="model" placeholder="Model" required>
+                <br>
+                <input class="form-control" name="price" placeholder="Price" required>
+                <br>
+                
+                <div class="row">
+                                <div class="col text-center">
+                                <button type="submit" name="submit" class="btn btn-primary">Add Book</button>
+                                    <button name="show" onclick="location.href='showdata.php'" class="btn btn-secondary">Show Data</button>
+                                </div>
+                            </div>
+            </form>
+        </div>
+        
+        
+        </table>
+    </center>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
