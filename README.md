@@ -63,14 +63,19 @@ A simple web application for managing car data using PHP and MySQL. The applicat
 
 ## Add Detail
 
-![Screenshot 2024-11-22 115151]()
+
+![Screenshot 2024-11-22 131754](https://github.com/user-attachments/assets/1f4554d8-a4bc-4bf5-90af-5548e9a43a21)
 
 ## Show Data
 
-![Screenshot 2024-11-22 115218]()
+![Screenshot 2024-11-22 131824](https://github.com/user-attachments/assets/be7a40ba-a308-4072-995c-9e6f2baf0d0a)
+
 
 ## Update Data
 
-![Screenshot 2024-11-22 115228]()
+![Screenshot 2024-11-22 131850](https://github.com/user-attachments/assets/aa1a30b8-ce20-4dcd-8aac-4411d83a2d88)
 
 ## video
+
+https://github.com/user-attachments/assets/3750ea72-751a-4df7-a3a3-ef78f25327c5
+
